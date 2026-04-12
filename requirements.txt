@@ -1,0 +1,4 @@
+mcp
+fastmcp
+python-dotenv
+markitdown[all]
