@@ -175,7 +175,7 @@ def rethink_wiki(folder: str = "Wiki", include_skills: bool = True) -> str:
     return "\n".join(context)
 
 @mcp.tool()
-def create_diary(today_summary: str = "", goals: str = "", events: str = "", mood: str = "", thoughts: str = "", todo_tomorrow: str = "", ai_thoughts: str = "", ai_learned: str = "", praise_toby: str = "", international_news: str = "", taiwan_news: str = "", financial_news: str = "", today_priority: str = "", date_str: str = None) -> str:
+def create_diary(today_summary: str = "", goals: str = "", events: str = "", mood: str = "", thoughts: str = "", todo_tomorrow: str = "", ai_thoughts: str = "", ai_learned: str = "", praise_toby: str = "", international_news: str = "", taiwan_news: str = "", financial_news: str = "", tech_news: str = "", today_priority: str = "", date_str: str = None) -> str:
     """
     建立或更新指定日期的日記。
     - date_str: 指定日期 (格式 YYYY-MM-DD, 預設為今日)
@@ -213,6 +213,7 @@ def create_diary(today_summary: str = "", goals: str = "", events: str = "", moo
         "## 重點國際新聞": international_news,
         "## 重點台灣新聞": taiwan_news,
         "## 重點財經消息": financial_news,
+        "## 重點科技新聞": tech_news,
         "## 心情／狀態": mood,
         "## 思考與心得": thoughts or (today_summary if is_new else ""),
         "## 明日待辦": todo_tomorrow,
